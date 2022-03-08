@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Caculator</h1>
+    <input type="text" id="so">
+    <input type="text" id="so2">
+    <span>=</span>
+    <span id="total"></span>
+    <br><br>
+    <button onclick="cong()">Addition(+)</button>
+    <button onclick="tru()">Subtraction(-)</button>
+    <button onclick="nhan()">Multiplication(X)</button>
+    <button onclick="chia()">Division(/)</button>
+    <script>
+        function cong(){
+            let num1 = document.getElementById('so').value;
+            let num2 = document.getElementById('so2').value;
+            a =parseInt(num1)
+            b =parseInt(num2)
+            document.getElementById('total').innerHTML= a+b;
+        }
+        function tru(){
+            let num1 = document.getElementById('so').value;
+            let num2 = document.getElementById('so2').value;
+            a =parseInt(num1)
+            b =parseInt(num2)
+            document.getElementById('total').innerHTML= a-b;
+        }
+        function nhan(){
+            let num1 = document.getElementById('so').value;
+            let num2 = document.getElementById('so2').value;
+            a =parseInt(num1)
+            b =parseInt(num2)
+            document.getElementById('total').innerHTML= a*b;
+        }
+        function chia(){
+            let num1 = document.getElementById('so').value;
+            let num2 = document.getElementById('so2').value;
+            a =parseInt(num1)
+            b =parseInt(num2)
+            document.getElementById('total').innerHTML= a/b;
+        }
+
+    </script>
+</body>
+</html>
