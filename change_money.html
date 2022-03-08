@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><input type="text" id="input"></td>
+        <td><select style="width: 109.39px" id="fromcurrency">
+            <option value="1">Việt Nam</option>
+            <option value="2">USD</option>
+        </select>
+        </td>
+        <td><select style="width: 88.68px" id="tocurrency">
+            <option value="1">Việt Nam</option>
+            <option value="2">USD</option>
+        </select>
+        </td>
+        <td>
+            <button  onclick="changerMonney()">Convert</button>
+        </td>
+    </tr>
+    <tr>
+        <td><p id="result" style="color: blue">Result:</p></td>
+    </tr>
+</table>
+
+<script>
+
+    function changerMonney() {
+        let num = document.getElementById("input").value;
+        let fromcurrency = document.getElementById("fromcurrency").value;
+        let tocurrency = document.getElementById("tocurrency").value;
+
+
+       if(fromcurrency==tocurrency){
+           document.getElementById('result').innerHTML="Result:"+num;
+       }
+       if (fromcurrency=="1" && tocurrency=="2"){
+           document.getElementById('result').innerHTML="Result:"+num/24000;
+       }
+       if (fromcurrency=="2"&& tocurrency=="1"){
+           document.getElementById('result').innerHTML="Result:"+num*24000;
+       }
+    }
+</script>
+</body>
+</html>
