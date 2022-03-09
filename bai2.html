@@ -6,10 +6,10 @@
 </head>
 <body>
 <script>
-  let inputcelsius = prompt("Độ C:");
-  let celsius = parseInt(inputcelsius);
-  // document.write("Độ C là:"+celsius);
-  let fahrenheit = 9*celsius/5+32;
+  let inputcelsius = +prompt("Độ C:");
+  // let celsius = parseInt(inputcelsius);
+  // // document.write("Độ C là:"+celsius);
+  let fahrenheit = 9*inputcelsius/5+32;
   document.write("Độ C là:"+inputcelsius);
   document.write("<br/>")
   document.write("Độ F là:" +fahrenheit);
