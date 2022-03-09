@@ -28,17 +28,14 @@
             <button  onclick="changerMonney()">Convert</button>
         </td>
     </tr>
-    <tr>
-        <td><p id="result" style="color: blue">Result:</p></td>
-    </tr>
 </table>
-
+<td><p id="result" style="color: blue">Result:</p></td>
 <script>
 
     function changerMonney() {
-        let num = document.getElementById("input").value;
-        let fromcurrency = document.getElementById("fromcurrency").value;
-        let tocurrency = document.getElementById("tocurrency").value;
+        let num = +document.getElementById("input").value;
+        let fromcurrency = +document.getElementById("fromcurrency").value;
+        let tocurrency = +document.getElementById("tocurrency").value;
 
 
        if(fromcurrency==tocurrency){

@@ -17,32 +17,32 @@
     <button onclick="chia()">Division(/)</button>
     <script>
         function cong(){
-            let num1 = document.getElementById('so').value;
-            let num2 = document.getElementById('so2').value;
-            a =parseInt(num1)
-            b =parseInt(num2)
-            document.getElementById('total').innerHTML= a+b;
+            let num1 = +document.getElementById('so').value;
+            let num2 = +document.getElementById('so2').value;
+            // a =parseInt(num1)
+            // b =parseInt(num2)
+            document.getElementById('total').innerHTML= num1+num2;
         }
         function tru(){
-            let num1 = document.getElementById('so').value;
-            let num2 = document.getElementById('so2').value;
-            a =parseInt(num1)
-            b =parseInt(num2)
-            document.getElementById('total').innerHTML= a-b;
+            let num1 = +document.getElementById('so').value;
+            let num2 = +document.getElementById('so2').value;
+            // a =parseInt(num1)
+            // b =parseInt(num2)
+            document.getElementById('total').innerHTML= num1-num2;
         }
         function nhan(){
-            let num1 = document.getElementById('so').value;
-            let num2 = document.getElementById('so2').value;
-            a =parseInt(num1)
-            b =parseInt(num2)
-            document.getElementById('total').innerHTML= a*b;
+            let num1 = +document.getElementById('so').value;
+            let num2 = +document.getElementById('so2').value;
+            // a =parseInt(num1)
+            // b =parseInt(num2)
+            document.getElementById('total').innerHTML= num1*num2;
         }
         function chia(){
-            let num1 = document.getElementById('so').value;
-            let num2 = document.getElementById('so2').value;
-            a =parseInt(num1)
-            b =parseInt(num2)
-            document.getElementById('total').innerHTML= a/b;
+            let num1 = +document.getElementById('so').value;
+            let num2 = +document.getElementById('so2').value;
+            // a =parseInt(num1)
+            // b =parseInt(num2)
+            document.getElementById('total').innerHTML= num1/num2;
         }
 
     </script>
